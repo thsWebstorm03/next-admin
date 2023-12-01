@@ -1,0 +1,17 @@
+.primary_button {
+   @apply w-max text-dark-fontColor border border-neutral-700 rounded px-2 py-2;
+   &:hover {
+      @apply bg-neutral-500;
+      transform: scale(1.1, 1.1);
+   }
+   &:active {
+      @apply bg-neutral-500;
+      transform: scale(1, 1);
+   }
+}
+
+.float_button {
+   @apply primary_button;
+   @apply relative z-[9999] mt-4 right-0;
+   box-shadow: #ffffffa3 0 0 2px 1px;
+}
