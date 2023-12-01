@@ -1,0 +1,43 @@
+.drawerWrapper{
+   @apply fixed h-full bg-[#262626a6] top-0 bottom-0 right-0 left-0 z-[-1] cursor-pointer;
+   &.show{
+      @apply z-[9999];
+   }
+   .drawer{
+      @apply absolute max-h-[100vh] max-w-[100vw] border border-neutral-700 bg-[#1e1e1e];
+
+      &.hideRight{
+         right:0;
+         transform: translateX(100%);
+      }
+      &.showRight{
+         right:0;
+         transform: translateX(0);
+      }
+      &.hideLeft{
+         left: 0;
+         transform: translateX(-100%);
+      }
+      &.showLeft{
+         left: 0;
+         transform: translateX(0);
+      }
+      &.hideTop{
+         top: 0;
+         transform: translateY(-100%);
+      }
+      &.showTop{
+         top: 0;
+         transform: translateY(0);
+      }
+      &.hideBottom{
+         bottom: 0;
+         transform: translateY(100%);
+      }
+      &.showBottom{
+         bottom: 0;
+         transform: translateY(0);
+      }
+
+   }
+}

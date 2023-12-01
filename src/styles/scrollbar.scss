@@ -1,0 +1,28 @@
+* {
+   scrollbar-color: var(--secondary) var(--primary);
+   scrollbar-width: thin;
+   scroll-behavior: smooth;
+ }
+ 
+ *::-webkit-scrollbar {
+   width: 8px;
+ }
+ 
+ *::-webkit-scrollbar-track {
+   @apply bg-neutral-600/30;
+   
+ }
+ 
+ *::-webkit-scrollbar-thumb {
+   @apply border bg-neutral-600/80 transition-colors;
+ 
+   &:hover {
+     @apply bg-neutral-600/50;
+     cursor: pointer;
+   }
+ 
+   &:active {
+     @apply bg-sky-500/80;
+   }
+ }
+ 
